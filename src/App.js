@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import styleRating from "./ratingStyle";
+import SubmittedFalse from "./SubmittedFalse";
+import SubmittedTrue from "./SubmittedTrue";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  let [style, setStyle] = useState([
+    {
+      backgroundColor: "hsl(25, 97%, 53%)",
+    },
+    { color: "white" },
+  ]);
+  let [rating, setRating] = useState([...styleRating]);
+  let [submit, setSubmit] = useState();
+  let [submitted, setSubmitted] = useState(false);
+
+  if (submitted) {
+    return <SubmittedTrue submit={submit} />;
+  } else {
+    return (
+      <SubmittedFalse
+        rating={rating}
+        setRating={setRating}
+        setSubmit={setSubmit}
+        style={style}
+        setStyle={setStyle}
+        submit={submit}
+        setSubmitted={setSubmitted}
+      />
+    );
+  }
 }
 
 export default App;
