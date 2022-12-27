@@ -26,16 +26,16 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/deji-dd/interactive-rating-component)
-- [live site URL] (https://x13xfk-3000.preview.csb.app/)
+- [live site URL](https://x13xfk-3000.preview.csb.app/)
 
 ### Built with
 
-- VS Code
-- Bootstrap
+- [VS Code](https://code.visualstudio.com/) - Code Editor
+- [Bootstrap](https://getbootstrap.com/) - Style Library
 - [React](https://reactjs.org/) - JS library
 
 ## Author
 
 - Frontend Mentor - [@deji-dd](https://www.frontendmentor.io/profile/deji-dd)
-- Twitter - [@@deji__dd](https://twitter.com/deji__dd)
-- LinkedIn - [Ayodeji Buraimoh] (https://www.linkedin.com/in/ayodeji-buraimoh-1368b9243/)
+- Twitter - [@deji__dd](https://twitter.com/deji__dd)
+- LinkedIn - [Ayodeji Buraimoh](https://www.linkedin.com/in/ayodeji-buraimoh-1368b9243/)
